@@ -71,57 +71,87 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button1.Caption
+     else
+         Edit1.Text := Edit1.Text + Button1.Caption
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button2.Caption
+     else
+         Edit1.Text := Edit1.Text + Button2.Caption
 end;
 
 procedure TForm1.Button17Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button17.Caption
+     else
+         Edit1.Text := Edit1.Text + Button17.Caption
 end;
 
 procedure TForm1.Button16Click(Sender: TObject);
 begin
-
+     Edit1.Text := '0'
 end;
 
 procedure TForm1.Button15Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button15.Caption
+     else
+         Edit1.Text := Edit1.Text + Button15.Caption
 end;
 
 procedure TForm1.Button14Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button14.Caption
+     else
+         Edit1.Text := Edit1.Text + Button14.Caption
 end;
 
 procedure TForm1.Button13Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button13.Caption
+     else
+         Edit1.Text := Edit1.Text + Button13.Caption
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button5.Caption
+     else
+         Edit1.Text := Edit1.Text + Button5.Caption
 end;
 
 procedure TForm1.Button6Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button6.Caption
+     else
+         Edit1.Text := Edit1.Text + Button6.Caption
 end;
 
 procedure TForm1.Button7Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button7.Caption
+     else
+         Edit1.Text := Edit1.Text + Button7.Caption
 end;
 
 procedure TForm1.Button8Click(Sender: TObject);
 begin
-
+     if Edit1.Text = '0' then
+     Edit1.Text := Button8.Caption
+     else
+         Edit1.Text := Edit1.Text + Button8.Caption
 end;
 
 end.
