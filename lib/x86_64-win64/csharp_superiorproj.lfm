@@ -1,167 +1,335 @@
 object Form1: TForm1
-  Left = 268
-  Height = 414
-  Top = 117
-  Width = 414
+  Left = 361
+  Height = 506
+  Top = 191
+  Width = 411
   Caption = 'C# Lepszy'
-  ClientHeight = 414
-  ClientWidth = 414
+  ClientHeight = 506
+  ClientWidth = 411
+  Color = clHighlight
   OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
   LCLVersion = '2.2.4.0'
   object Edit1: TEdit
     Left = 8
-    Height = 23
+    Height = 31
     Top = 9
     Width = 396
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnChange = Edit1Change
+    ParentFont = False
     TabOrder = 0
-    Text = 'Edit1'
+    Text = '0'
   end
   object Button1: TButton
+    Cursor = crHandPoint
     Left = 16
     Height = 72
-    Top = 40
+    Top = 56
     Width = 64
     Caption = '1'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button1Click
+    ParentFont = False
     TabOrder = 1
   end
   object Button2: TButton
+    Cursor = crHandPoint
     Left = 96
     Height = 72
-    Top = 40
+    Top = 56
     Width = 64
     Caption = '2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button2Click
+    ParentFont = False
     TabOrder = 2
   end
   object Button3: TButton
+    Cursor = crHandPoint
     Left = 176
     Height = 72
-    Top = 40
+    Top = 56
     Width = 64
     Caption = '3'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button3Click
+    ParentFont = False
     TabOrder = 3
   end
   object Button4: TButton
+    Cursor = crHandPoint
     Left = 256
     Height = 72
-    Top = 40
+    Top = 56
     Width = 64
     Caption = '4'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button4Click
+    ParentFont = False
     TabOrder = 4
   end
   object Button5: TButton
+    Cursor = crHandPoint
     Left = 336
     Height = 72
-    Top = 40
+    Top = 56
     Width = 64
     Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button5Click
+    ParentFont = False
     TabOrder = 5
   end
   object Button6: TButton
+    Cursor = crHandPoint
     Left = 16
     Height = 72
-    Top = 120
+    Top = 136
     Width = 64
     Caption = '5'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button6Click
+    ParentFont = False
     TabOrder = 6
   end
   object Button7: TButton
+    Cursor = crHandPoint
     Left = 96
     Height = 72
-    Top = 120
+    Top = 136
     Width = 64
     Caption = '6'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button7Click
+    ParentFont = False
     TabOrder = 7
   end
   object Button8: TButton
+    Cursor = crHandPoint
     Left = 176
     Height = 72
-    Top = 120
+    Top = 136
     Width = 64
     Caption = '7'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button8Click
+    ParentFont = False
     TabOrder = 8
   end
   object Button9: TButton
+    Cursor = crHandPoint
     Left = 256
     Height = 72
-    Top = 120
+    Top = 136
     Width = 64
     Caption = '8'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button9Click
+    ParentFont = False
     TabOrder = 9
   end
   object Button10: TButton
+    Cursor = crHandPoint
     Left = 336
     Height = 72
-    Top = 120
+    Top = 136
     Width = 64
     Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button10Click
+    ParentFont = False
     TabOrder = 10
   end
   object Button11: TButton
+    Cursor = crHandPoint
     Left = 16
     Height = 72
-    Top = 204
+    Top = 220
     Width = 64
     Caption = '9'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button11Click
+    ParentFont = False
     TabOrder = 11
   end
   object Button12: TButton
+    Cursor = crHandPoint
     Left = 96
     Height = 72
-    Top = 204
+    Top = 220
     Width = 64
     Caption = '0'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button12Click
+    ParentFont = False
     TabOrder = 12
   end
   object Button13: TButton
+    Cursor = crHandPoint
     Left = 176
     Height = 72
-    Top = 204
+    Top = 220
     Width = 64
-    Caption = '.'
+    Caption = ','
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button13Click
+    ParentFont = False
     TabOrder = 13
   end
   object Button14: TButton
+    Cursor = crHandPoint
     Left = 256
     Height = 156
-    Top = 204
+    Top = 220
     Width = 64
     Caption = '='
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button14Click
+    ParentFont = False
     TabOrder = 14
   end
   object Button15: TButton
+    Cursor = crHandPoint
     Left = 336
     Height = 72
-    Top = 204
+    Top = 220
     Width = 64
     Caption = 'x'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button15Click
+    ParentFont = False
     TabOrder = 15
   end
   object Button16: TButton
+    Cursor = crHandPoint
     Left = 16
     Height = 72
-    Top = 288
+    Top = 304
     Width = 224
     Caption = 'Clear'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button16Click
+    ParentFont = False
     TabOrder = 16
   end
   object Button17: TButton
+    Cursor = crHandPoint
     Left = 336
     Height = 72
-    Top = 288
+    Top = 304
     Width = 64
     Caption = '/'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button17Click
+    ParentFont = False
     TabOrder = 17
+  end
+  object Button18: TButton
+    Cursor = crHandPoint
+    Left = 336
+    Height = 72
+    Top = 424
+    Width = 64
+    Caption = 'x2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button17Click
+    ParentFont = False
+    TabOrder = 18
   end
 end
