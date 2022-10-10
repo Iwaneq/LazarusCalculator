@@ -39,6 +39,7 @@ type
     procedure Button15Click(Sender: TObject);
     procedure Button16Click(Sender: TObject);
     procedure Button17Click(Sender: TObject);
+    procedure Button18Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -141,6 +142,13 @@ begin
 end;
 
 procedure TForm1.Button17Click(Sender: TObject);
+begin
+     Operand1 := Edit1.Text;
+     Operators := '/';
+     Edit1.Text := '0';
+end;
+
+procedure TForm1.Button18Click(Sender: TObject);
 begin
      Operand1 := Edit1.Text;
      Answer := floattostr(StrToFloat(Operand1) * StrToFloat(Operand1));

@@ -143,6 +143,13 @@ end;
 procedure TForm1.Button17Click(Sender: TObject);
 begin
      Operand1 := Edit1.Text;
+     Operators := '/';
+     Edit1.Text := '0';
+end;
+
+procedure TForm1.Button18Click(Sender: TObject);
+begin
+     Operand1 := Edit1.Text;
      Answer := floattostr(StrToFloat(Operand1) * StrToFloat(Operand1));
      Edit1.Text := Answer;
 end;
