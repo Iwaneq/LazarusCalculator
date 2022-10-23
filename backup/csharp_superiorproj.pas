@@ -13,37 +13,38 @@ type
 
   TForm1 = class(TForm)
     Button1: TButton;
-    Button10: TButton;
+    SubtractButton: TButton;
     Button11: TButton;
     Button12: TButton;
-    Button13: TButton;
-    Button14: TButton;
-    Button15: TButton;
-    Button16: TButton;
-    Button17: TButton;
-    Button18: TButton;
+    DecimalButton: TButton;
+    EqualsButton: TButton;
+    MultiplyButton: TButton;
+    ClearButton: TButton;
+    DivideButton: TButton;
+    SquareButton: TButton;
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
-    Button5: TButton;
+    AddButton: TButton;
     Button6: TButton;
     Button7: TButton;
     Button8: TButton;
     Button9: TButton;
     Edit1: TEdit;
-    procedure Button10Click(Sender: TObject);
+    procedure SubtractButton(Sender: TObject);
     procedure Button11Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
-    procedure Button13Click(Sender: TObject);
-    procedure Button14Click(Sender: TObject);
-    procedure Button15Click(Sender: TObject);
-    procedure Button16Click(Sender: TObject);
-    procedure Button17Click(Sender: TObject);
+    procedure DecimalButton(Sender: TObject);
+    procedure EqualsButton(Sender: TObject);
+    procedure MultiplyButton(Sender: TObject);
+    procedure ClearButton(Sender: TObject);
+    procedure DivideButton(Sender: TObject);
+    procedure SquareButton(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
+    procedure AddButton(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
@@ -140,33 +141,33 @@ begin
          Edit1.Text := Edit1.Text + Button4.Caption
 end;
 
-procedure TForm1.Button17Click(Sender: TObject);
+procedure TForm1.DivideButton(Sender: TObject);
 begin
      Operand1 := Edit1.Text;
      Operators := '/';
      Edit1.Text := '0';
 end;
 
-procedure TForm1.Button18Click(Sender: TObject);
+procedure TForm1.SquareButton(Sender: TObject);
 begin
      Operand1 := Edit1.Text;
      Answer := floattostr(StrToFloat(Operand1) * StrToFloat(Operand1));
      Edit1.Text := Answer;
 end;
 
-procedure TForm1.Button16Click(Sender: TObject);
+procedure TForm1.ClearButton(Sender: TObject);
 begin
      Edit1.Text := '0'
 end;
 
-procedure TForm1.Button15Click(Sender: TObject);
+procedure TForm1.MultiplyButton(Sender: TObject);
 begin
      Operand1 := Edit1.Text;
      Operators := '*';
      Edit1.Text := '0';
 end;
 
-procedure TForm1.Button14Click(Sender: TObject);
+procedure TForm1.EqualsButton(Sender: TObject);
 begin
      Operand2 := Edit1.Text;
      case(Operators) of
@@ -182,12 +183,12 @@ begin
      Edit1.Text := Answer;
 end;
 
-procedure TForm1.Button13Click(Sender: TObject);
+procedure TForm1.DecimalButton(Sender: TObject);
 begin
      if (Pos('.', Edit1.Text)<>0) then
      exit
      else
-         Edit1.Text := Edit1.Text + Button13.Caption;
+         Edit1.Text := Edit1.Text + DecimalButton.Caption;
 end;
 
 procedure TForm1.Button11Click(Sender: TObject);
@@ -198,7 +199,7 @@ begin
          Edit1.Text := Edit1.Text + Button11.Caption
 end;
 
-procedure TForm1.Button10Click(Sender: TObject);
+procedure TForm1.SubtractButton(Sender: TObject);
 begin
   Operand1 := Edit1.Text;
    Operators := '-';
@@ -213,7 +214,7 @@ begin
          Edit1.Text := Edit1.Text + Button12.Caption
 end;
 
-procedure TForm1.Button5Click(Sender: TObject);
+procedure TForm1.AddButton(Sender: TObject);
 begin
      Operand1 := Edit1.Text;
      Operators := '+';

@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 242
+  Left = 256
   Height = 506
-  Top = 256
+  Top = 164
   Width = 411
   Caption = 'C# Lepszy'
   ClientHeight = 506
@@ -109,7 +109,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    OnClick = Button5Click
+    OnClick = AddButton
     ParentFont = False
     TabOrder = 5
   end
@@ -194,7 +194,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    OnClick = Button10Click
+    OnClick = SubtractButton
     ParentFont = False
     TabOrder = 10
   end
@@ -245,7 +245,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    OnClick = Button13Click
+    OnClick = DecimalButton
     ParentFont = False
     TabOrder = 13
   end
@@ -262,7 +262,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    OnClick = Button14Click
+    OnClick = EqualsButton
     ParentFont = False
     TabOrder = 14
   end
@@ -279,7 +279,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    OnClick = Button15Click
+    OnClick = MultiplyButton
     ParentFont = False
     TabOrder = 15
   end
@@ -296,7 +296,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    OnClick = Button16Click
+    OnClick = ClearButton
     ParentFont = False
     TabOrder = 16
   end
@@ -313,7 +313,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    OnClick = Button17Click
+    OnClick = DivideButton
     ParentFont = False
     TabOrder = 17
   end
@@ -330,7 +330,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
-    OnClick = Button18Click
+    OnClick = SquareButton
     ParentFont = False
     TabOrder = 18
   end
